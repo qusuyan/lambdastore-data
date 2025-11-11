@@ -1,0 +1,19 @@
+# command: ./benchmark.py toml experiments/reddit.toml
+# constants: num-client-machines=30 num-compute-nodes=0 replica-set-size=3 distribution=uniform num-objects=100000 transfer-chance=50 objects-per-transaction=1 operations-per-object=10 num-txns=500 use-light-replicas=False entries-per-object=1 entry-size=1024 write-chance=0 execution-mode=all-replicas load-balancing-policy=always-add-light-replica workload=reddit num-communities=100 get-thread-chance=90 create-thread-chance=0 num-followers=50 enable-tracing=false storage-backend=rocks-db transaction-protocol=optimistic replication-scheme=primary-backup worker-type=lambdastore guard-creation-chance=10 scale-factor=50
+# ----------------------------- 
+uid, client-multiply, num-shards, num-clients, throughput, latency-mean, latency-median, latency-99p, avg-job-runtime
+231019-050954, 40, 2, 1200, 39845.222, 27.99, 21.849, 139.657, 5.645
+231019-051818, 40, 4, 1200, 58022.943, 19.01, 13.538, 79.319, 9.177
+231019-052745, 40, 8, 1200, 78324.633, 14.256, 9.51, 59.508, 10.118
+231019-053801, 40, 12, 1200, 88432.545, 12.711, 7.828, 61.4, 11.066
+231019-054825, 40, 16, 1200, 97050.668, 11.071, 6.915, 56.491, 9.997
+231019-055931, 120, 2, 3600, 33422.296, 98.218, 24.686, 864.724, 5.919
+231019-060911, 120, 4, 3600, 79799.361, 40.91, 28.644, 224.581, 8.201
+231019-061916, 120, 8, 3600, 132867.393, 24.633, 16.843, 117.299, 9.218
+231019-062908, 120, 12, 3600, 158386.467, 20.585, 13.364, 96.564, 10.526
+231019-063948, 120, 16, 3600, 184993.654, 17.571, 11.971, 71.95, 9.883
+231019-065006, 200, 2, 6000, 34769.009, 152.527, 31.15, 1537.861, 5.956
+231019-070034, 200, 4, 6000, 56022.97, 87.413, 23.484, 817.586, 8.432
+231019-071126, 200, 8, 6000, 119092.316, 41.05, 19.008, 424.608, 9.325
+231019-072233, 200, 12, 6000, 174914.697, 30.375, 17.943, 151.846, 10.567
+231019-073423, 200, 16, 6000, 231647.598, 24.068, 16.976, 93.909, 10.698
