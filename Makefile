@@ -1,4 +1,11 @@
-PLOTS = object-creation.pdf job-length.pdf micro-throughput.pdf micro-latency.pdf sharding.pdf object-partitioning.pdf app-latency.pdf timeout.pdf light-replication.pdf
+PLOTS = object-creation.pdf \
+		job-length.pdf micro-throughput.pdf \
+		micro-latency.pdf \
+		sharding.pdf \
+		object-partitioning.pdf \
+		app-latency.pdf \
+		timeout.pdf \
+		light-replication.pdf
 
 all: $(PLOTS)
 
